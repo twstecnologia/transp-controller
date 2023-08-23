@@ -1,6 +1,6 @@
 # Projeto Transp-Controller
      - O projeto tem que esta com a versão nodejs 18.12.1
-     - 
+     - efetuar as migrations do prisma com o comando "npx prisma migrate dev --name init"
 
 ## Backend
 
