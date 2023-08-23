@@ -1,7 +1,10 @@
 import { Router } from 'express'
+import { CreateAccountsController } from '../modules/accounts/useCases/createAccounts/createAccountsController'
 
 const accountsRoutes = Router()
 
-accountsRoutes.post("/create", () => {console.log("criação de usuário")})
+const createAccountsController = new CreateAccountsController()
+
+accountsRoutes.post("/create", createAccountsController.handler)
 
 export { accountsRoutes }
