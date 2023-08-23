@@ -1,13 +1,18 @@
 import { PrismaClient, accounts } from '@prisma/client'
-import {CreateAccountssDTO} from '../../dtos/createAccountsDTO'
+import {CreateAccountsDTO} from '../../dtos/createAccountsDTO'
 
 const prisma = new PrismaClient()
 
 class CreateAccountsUseCase {
-    async execute({name, email, phone, cpf, master}: CreateAccountssDTO): Promise<accounts> {
-        const accountAllReadExists = await prisma.accounts.findFirst()
-
+    async execute({name, email, phone, cpf, master}: CreateAccountsDTO): Promise<accounts> {
+        const accountAllReadExists = await prisma.accounts.findFirst({
+            where: {
+                cpf: cpf
+            }
+        })
+        console.log(accountAllReadExists)
         if(accountAllReadExists){
+            //consertar bug de erro por cadastrar account com mesmo cpf api esta parando
             throw new Error("Account allready exists")
         }
 
