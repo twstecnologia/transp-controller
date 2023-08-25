@@ -3,5 +3,6 @@ export interface CreateAccountsDTO {
     email: string,
     phone: string,
     cpf: string,
-    master: boolean
+    master: boolean,
+    password: string
 }

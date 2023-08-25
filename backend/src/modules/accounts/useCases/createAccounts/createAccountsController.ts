@@ -3,7 +3,7 @@ import { CreateAccountsUseCase } from "./createAccountsUseCase";
 
 class CreateAccountsController {
     async handler(req: Request, res: Response) {
-        const {name, email, phone, cpf, master } = req.body
+        const {name, email, phone, cpf, master, password } = req.body
 
         const createAccountsUseCase = new CreateAccountsUseCase()
 
@@ -12,7 +12,8 @@ class CreateAccountsController {
             email, 
             phone, 
             cpf, 
-            master
+            master,
+            password
         })
 
         return res.status(201).json(account)

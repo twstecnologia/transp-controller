@@ -4,7 +4,7 @@ import {CreateAccountsDTO} from '../../dtos/createAccountsDTO'
 const prisma = new PrismaClient()
 
 class CreateAccountsUseCase {
-    async execute({name, email, phone, cpf, master}: CreateAccountsDTO): Promise<accounts> {
+    async execute({name, email, phone, cpf, master, password}: CreateAccountsDTO): Promise<accounts> {
         const accountAllReadExists = await prisma.accounts.findFirst({
             where: {
                 cpf: cpf
@@ -22,7 +22,8 @@ class CreateAccountsUseCase {
                 email,
                 phone,
                 cpf,
-                master
+                master,
+                password
             }
         })
         return account
