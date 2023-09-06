@@ -1,0 +1,14 @@
+
+.cardDashboard {
+    background-color: brown;
+    overflow: hidden;
+
+}
+
+.cardImage {
+    background-color: rgb(138, 131, 131);
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
