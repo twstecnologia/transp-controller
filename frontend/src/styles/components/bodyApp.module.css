@@ -1,0 +1,6 @@
+.BodyApp {
+    display: flex;
+    background-color: #ffff;
+    height: 100vh;
+    width: 100vw;
+}

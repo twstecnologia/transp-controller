@@ -1,3 +1,42 @@
 .cardMain {
-    background-color: rgb(51 65 85);
+    background-color: #ff4c2d9c;
+    width: 250px;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #161925;
+}
+
+.logo {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.cardMain footer {
+    margin-left: 4rem;
+}
+
+.linkList {
+    text-decoration: none;
+    color: #161925;
+    transition: transform 0.3s ease;
+
+
+}
+
+.linkList:hover{
+    color: #5f758e;
+    transform: translate(20px, 2%);
 }
