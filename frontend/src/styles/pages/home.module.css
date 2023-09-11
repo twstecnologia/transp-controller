@@ -1,14 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-
-
-html,
 body {
   padding: 0;
   margin: 0;
   box-sizing: 0;
+
 
   scroll-behavior: smooth;
 }
@@ -20,5 +15,6 @@ a {
 
 * {
   box-sizing: border-box;
+  
 
 }
