@@ -1,12 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600&family=Ubuntu:ital,wght@1,700&display=swap');
-
 
 html,
 body {
-  background-color: #ff4c2d6b;
+
   padding: 0;
   margin: 0;
   display: flex;
@@ -16,14 +12,5 @@ body {
   align-items: center;
   justify-content: center;
   scroll-behavior: smooth;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-
+  font-family: 'UBUNTU', sans-serif;
 }
