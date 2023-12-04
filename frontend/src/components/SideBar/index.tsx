@@ -9,6 +9,9 @@ import IconRoutes from '../icons/IconRoutes';
 import IconDriver from '../icons/IconDriver';
 import IconUser from '../icons/IconUser'
 import IconLogout from '../icons/IconLogout';
+import IconRegister from '../icons/IconRegister';
+import IconMap from '../icons/IconMap';
+import IconPakage from '../icons/IconPakage';
 
 
 export default function SideBar(){
@@ -71,16 +74,7 @@ export default function SideBar(){
 				</Link>
 
 
-				<Link href='/driver'>
 
-					<div
-							className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
-					>
-						<IconDriver />
-						<span className="text-[15px] ml-4 text-gray-200 font-bold">Driver</span>
-					</div>
-
-				</Link>
 
 
 
@@ -89,10 +83,10 @@ export default function SideBar(){
 				onClick={dropdown}
 				>
 
-					<IconUser />
+					<IconRegister />
 
 					<div className="flex justify-between w-full items-center">
-						<span className="text-[15px] ml-4 text-gray-200 font-bold">Usuários</span>
+						<span className="text-[15px] ml-4 text-gray-200 font-bold">Cadastro</span>
 						<span className="text-sm rotate-180" id="arrow">
 							<i className="bi bi-chevron-down"></i>
 						</span>
@@ -104,18 +98,39 @@ export default function SideBar(){
 				className={`text-left text-sm mt-2 w-4/5 mx-auto text-gray-200 font-bold ${isSubmenuOpen ? '' : 'hidden'}`}
 				id="submenu"
 				>
+
+					<Link href='/driver'>
+						
+						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1 flex ">
+						<IconDriver />
+							Driver
+						</h1>
+
+					</Link>
+
 					<Link href='/users/create'>
 
-						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">
-							Cadastro
+						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1 flex">
+						<IconRoutes />
+							Rotas
 						</h1>
 
 					</Link>
 
 					<Link href='/users/list'>
+						
+						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1 flex">
+							<IconPakage />
+							Pacote avulso
+						</h1>
 
-						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">
-							Manutenção
+					</Link>
+
+					<Link href='/city/create'>
+
+						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1 flex">
+							<IconMap />
+							Cidade
 						</h1>
 
 					</Link>
