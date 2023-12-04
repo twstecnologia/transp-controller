@@ -1,0 +1,20 @@
+.Title {
+
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.cardForm {
+    display: flex;
+    margin-left: 60px;
+    flex-direction: column;
+    
+}
+
+.inputDriver {
+    width: 800px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 40px;
+}
