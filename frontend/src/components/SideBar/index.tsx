@@ -7,11 +7,11 @@ import IconHome from '../IconHome/index.t';
 import LogoSideBar from '../icons/LogoSideBar';
 import IconRoutes from '../icons/IconRoutes';
 import IconDriver from '../icons/IconDriver';
-import IconUser from '../icons/IconUser'
 import IconLogout from '../icons/IconLogout';
 import IconRegister from '../icons/IconRegister';
 import IconMap from '../icons/IconMap';
 import IconPakage from '../icons/IconPakage';
+import IconReport from '../icons/IconReport';
 
 
 export default function SideBar(){
@@ -73,7 +73,16 @@ export default function SideBar(){
 
 				</Link>
 
+				<Link href='/driver-report'>
 
+					<div
+							className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+					>
+						<IconReport />
+						<span className="text-[15px] ml-4 text-gray-200 font-bold">Relatório</span>
+					</div>
+
+				</Link>
 
 
 
