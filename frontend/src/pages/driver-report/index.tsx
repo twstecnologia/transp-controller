@@ -68,9 +68,13 @@ export default function DriverReport() {
 
 						<thead className="border-2 w-96 bg-gray-400">
 							<tr className="border-2">
-								<th className="border-2">Driver</th>
 								<th className="border-2">Data Entrega</th>
+								<th className="border-2">Driver</th>
 								<th className="border-2">Nº T.O.</th>
+								<th className="border-2">Qtd. Pacotes</th>
+								
+								<th className="border-2">cidade</th>
+								<th className="border-2">Pcts Avulso</th>
 								<th className="border-2">Valor</th>
 							</tr>
 						</thead>
@@ -78,16 +82,21 @@ export default function DriverReport() {
 						<tbody className="border-2">
 
 							<tr  className="border-2">
-								<td className="border-2">William de Angelo</td>
 								<td className="border-2">20/09/2023</td>
-								<td className="border-2">TO0000000</td>
+								<td className="border-2">William de Angelo</td>
+								<td className="border-2">TO0000215</td>
+								<td className="border-2">80</td>
+								<td className="border-2">JAU</td>
+								<td className="border-2">5</td>
 								<td className="border-2">R$ 300,00</td>
 							</tr>
-
 							<tr  className="border-2">
-								<td className="border-2">William de Angelo</td>
 								<td className="border-2">20/09/2023</td>
-								<td className="border-2">TO0000000</td>
+								<td className="border-2">William de Angelo</td>
+								<td className="border-2">TO0000215</td>
+								<td className="border-2">80</td>
+								<td className="border-2">JAU</td>
+								<td className="border-2">5</td>
 								<td className="border-2">R$ 300,00</td>
 							</tr>
 

@@ -5,8 +5,8 @@ export default function StateSelect() {
 			<select 
                 id="countries" 
                 className="
-                    bg-gray-50 
-                    border 
+                    
+                    border
                     border-gray-300 
                     text-black-900 
                     text-sm 
@@ -14,13 +14,9 @@ export default function StateSelect() {
                     focus:ring-blue-500 
                     focus:border-blue-500 
                     block w-full 
+                    
                     p-2.5 
-                    dark:bg-white-700 
-                    dark:border-gray-600 
-                    dark:placeholder-gray-400 
-                    dark:text-black 
-                    dark:focus:ring-blue-500 
-                    dark:focus:border-blue-500"
+                    "
                     >
 				<option selected>Estado</option>
 				<option value="AC">Acre</option>

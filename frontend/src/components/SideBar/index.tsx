@@ -62,16 +62,7 @@ export default function SideBar(){
 				</Link>
 
 
-				<Link href='/rotas'>
 
-					<div
-							className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
-					>
-						<IconRoutes />
-						<span className="text-[15px] ml-4 text-gray-200 font-bold">Rotas</span>
-					</div>
-
-				</Link>
 
 				<Link href='/driver-report'>
 
@@ -117,7 +108,7 @@ export default function SideBar(){
 
 					</Link>
 
-					<Link href='/users/create'>
+					<Link href='/rotas'>
 
 						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1 flex">
 						<IconRoutes />
@@ -126,7 +117,7 @@ export default function SideBar(){
 
 					</Link>
 
-					<Link href='/users/list'>
+					<Link href='/package/create'>
 						
 						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1 flex">
 							<IconPakage />

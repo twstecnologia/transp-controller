@@ -51,12 +51,20 @@ export default function Driver() {
                               </div>
                             </div>
 
-                            <div className="lg:col-span-4">
+                            <div className="sm:col-span-3">
                               <label htmlFor="email" className="block text-lg font-medium leading-6 text-gray-900">E-mail</label>
                               <div className="mt-2">
-                                <input id="email" name="email" type="email" autoComplete="email" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 lg:text-lg lg:leading-6 p-3" />
+                                <input type="text" name="email" id="email" autoComplete="email" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 lg:text-lg lg:leading-6 p-3 " />
                               </div>
                             </div>
+
+                            <div className="lg:col-span-3">
+                              <label htmlFor="password" className="block text-lg font-medium leading-6 text-gray-900">Senha</label>
+                              <div className="mt-2">
+                                <input type="password" name="password" id="password" autoComplete="family-name" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 lg:text-lg lg:leading-6 p-3" />
+                              </div>
+                            </div>
+
 
                             <div className="lg:col-span-3">
                               <label htmlFor="country" className="block text-lg font-medium leading-6 text-gray-900">Estado</label>
